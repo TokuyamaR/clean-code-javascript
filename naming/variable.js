@@ -13,3 +13,14 @@ const AVERAGE_SCORE = {
   society: 80,
   english: 60,
 };
+
+// BAD:適切な命名が行われていない
+// 配列を昇順に並び替えて返却する関数
+function orderChar(array) {
+  return array.sort((first, second) => first - second);
+}
+
+// GOOD:
+function sortAscending(array) {
+  return array.sort((first, second) => first - second);
+}
